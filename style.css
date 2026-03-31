@@ -1,19 +1,47 @@
 body {
     background-color: rgb(217, 185, 163);
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+    font-size: 1.5vw;
+    background-color: rgb(200, 255, 129);
+    padding: 15px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+}
+
 #homepage {
+    font-size: 1.5vw;
     text-align: center;
 }
 
-/*
-ul, ol{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    list-style-position: inside;
+#homepage h1 {
+    color: rgb(172, 0, 0);
 }
-*/
 
+#signup {
+    font-size: 1.5vw;
+    background-color: rgb(200, 255, 129);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    box-shadow: 0 0 10px rgba(30, 0, 255, 1);
+    transition: all 0.3s
+}
 
+.glowing-box {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.glowing-box:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+}
