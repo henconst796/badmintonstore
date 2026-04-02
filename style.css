@@ -1,3 +1,6 @@
+a {
+    text-decoration: none;
+}
 body {
     background-color: rgb(217, 185, 163);
     margin: 0;
@@ -12,6 +15,9 @@ nav {
     margin: auto;
     border-radius: 10px;
 }
+
+
+/* HOMEPAGE */
 
 #homepage {
     font-size: 1.5vw;
@@ -34,6 +40,65 @@ nav {
     box-shadow: 0 0 10px rgba(30, 0, 255, 1);
     transition: all 0.3s
 }
+
+
+/* REGISTRATION PAGE */
+
+#registration {
+    font-size: 1.5vw;
+    position: absolute;
+    left: 40%;
+}
+
+#registration h1 {
+    position: relative;
+    right: 5%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    font-size: 1.5vw;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 2%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+label[for="title"] {
+    margin-right: 10%;
+}
+
+
+label[for="Mr."],
+label[for="Ms."],
+label[for="PhD."] {
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* EFFECTS */
 
 .glowing-box {
     background-color: rgb(255, 255, 255);
