@@ -16,6 +16,10 @@ nav {
     border-radius: 10px;
 }
 
+#navi :hover {
+    background-color: red;
+}
+
 
 /* HOMEPAGE */
 
@@ -40,6 +44,7 @@ nav {
     box-shadow: 0 0 10px rgba(30, 0, 255, 1);
     transition: all 0.3s
 }
+
 
 
 /* REGISTRATION PAGE */
