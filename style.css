@@ -1,6 +1,13 @@
-a {
-    text-decoration: none;
+* {transition: all 0.3s;}
+hr {background-color: black; height: 2px; margin-bottom: 10px;}
+a {text-decoration: none;}
+h1 {
+    color: rgba(180, 66, 0, 0.918);
+    text-transform: uppercase;
 }
+
+h2 {font-style: italic}
+
 body {
     background-color: rgb(217, 185, 163);
     margin: 0;
@@ -8,16 +15,20 @@ body {
 }
 
 nav {
+    font-weight: bold;
     font-size: 1.5vw;
-    background-color: rgb(200, 255, 129);
+    background-color: rgb(255, 170, 113);
     padding: 15px;
     width: fit-content;
     margin: auto;
     border-radius: 10px;
+    transition: all 0.3s
 }
 
 #navi :hover {
-    background-color: red;
+    background-color: rgb(98, 255, 208);
+    padding: 5px;
+    border-radius: 10px;
 }
 
 
@@ -28,26 +39,100 @@ nav {
     text-align: center;
 }
 
-#homepage h1 {
-    color: rgb(172, 0, 0);
-}
 
 #signup {
+    font-weight: bold;
     font-size: 1.5vw;
-    background-color: rgb(200, 255, 129);
+    background-color: rgb(255, 170, 113);
     padding: 10px;
     border-radius: 10px;
     width: fit-content;
     position: absolute;
     left: 90%;
     top: 2%;
-    box-shadow: 0 0 10px rgba(30, 0, 255, 1);
-    transition: all 0.3s
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+
+}
+
+#signup :hover {
+    background-color: rgb(98, 255, 208);
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+#mainlogo {
+    width: 50%;
+    max-width: 1000px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* RACKETS */
+#rackets {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+
+/* CLOTHING */
+
+#clothing {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+
+/* RACKET STATS */
+
+#racketstats {
+    font-size: 1.5vw;
+}
+
+#racketstats h1, h2 {
+    text-align: center;
+}
+
+#stattable{
+    margin: 20px auto;
+    width: 50%; 
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+#stattable th {
+    background-color: rgb(255, 170, 113);
+    border: 1px solid #666666;
+    padding: 5px;
+}
+
+#stattable tr {
+    text-align: center;
+}
+
+#stattable td {
+    border: 1px solid #666666;
+}
+
+#rankbrand, #rankracket {
+    list-style-position: inside;
+    text-align: center;
+    
+}
+
+#racketstats tr:hover {
+    background-color: rgb(98, 255, 208);
+    padding: 5px;
 }
 
 
 
+
 /* REGISTRATION PAGE */
+
+#registration label {
+    font-weight: bold;
+}
 
 #registration {
     font-size: 1.5vw;
@@ -94,24 +179,27 @@ label[for="PhD."] {
 
 input[type="submit"],
 input[type="reset"] {
-    margin-top: 20px;
+    font-size: 1.3vw;
+    margin-top: 10px;
     padding: 5px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgb(98, 255, 208);
+    font-size: 1.5vw;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
 }
 
 /* EFFECTS */
-
-.glowing-box {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-}
-
-.glowing-box:hover {
-    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
-}
