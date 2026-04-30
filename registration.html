@@ -8,7 +8,7 @@
 </head>
 
 <body id="registration">
-    <h1>Sign up your account</h1>
+    <h1 class="pulse-element">Sign up your account</h1>
     <form action="userdb.php" method="POST">
         <label for="username">Username:</label>
         <input type="text" id="username" placeholder="Username" minlength="6" maxlength="15" required><br>
@@ -28,10 +28,10 @@
         <input type="email" id="email" placeholder="john_helldiver@gmail.com"><br>
         
 
-        <label for="email">Phone: </label>
+        <label for="phone">Phone: </label>
         <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
 
-        <label for="email">Birthday: </label>
+        <label for="birthday">Birthday: </label>
         <input type="date" id="bday"><br>
 
 
@@ -54,5 +54,6 @@
         <input type="reset">
         <input type="submit">
     </form>
+    <script src="main.js"></script>
 </body>
 </html>
